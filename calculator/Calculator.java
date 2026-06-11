@@ -10,7 +10,13 @@ public class Calculator {
             case '+' -> result = a + b;
             case '-' -> result = a - b;
             case '*' -> result = a * b;
-            case '/' -> result = a / b;
+            case '/' -> {
+                if (b == 0) {
+                    throw new ArithmeticException();
+                }
+                result = a / b;
+            }
+
         }
         record.add(result);
         return result;
@@ -22,6 +28,7 @@ public class Calculator {
     public void getRecord() {
         System.out.println("목록\n" + record);
     }
+
     public void setRecord() {
         record.remove(0);
     }
