@@ -16,16 +16,17 @@ public class App {
             int b = sc.nextInt();
             System.out.println("연산자를 입력하세요.");
             char operator = sc.next().charAt(0);
+
             result = cal.calculate(a, b, operator);
             System.out.println("결과: " + result);
+
+            cal.getRecord();
 
             System.out.println("더 계산하시겠습니까? (종료: exit)");
             String exit = sc.next();
             if (exit.equals("exit")) {
                 return;
             }
-            System.out.println(cal.record);
-
 
         }
     }

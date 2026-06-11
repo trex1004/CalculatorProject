@@ -16,6 +16,10 @@ public class Calculator {
         return result;
     }
 
-    //    private static int record = 0;
-    ArrayList<Integer> record = new ArrayList<>();
+
+    private static ArrayList<Integer> record = new ArrayList<>();
+
+    public void getRecord() {
+        System.out.println("목록\n" + record);
+    }
 }
