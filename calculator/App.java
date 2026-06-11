@@ -7,8 +7,6 @@ public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Calculator cal = new Calculator();
-        int result = 0;
-
 
         while (true) {
             try {
@@ -20,7 +18,7 @@ public class App {
                 System.out.println("연산자를 입력하세요.");
                 char operator = sc.next().charAt(0);
 
-                result = cal.calculate(a, b, operator);
+                int result = cal.calculate(a, b, operator);
                 System.out.println("결과: " + result);
 
                 System.out.println("결과 목록 조회\n" + cal.getRecord()); //결과 목록 조회
