@@ -24,6 +24,8 @@ public class App {
             if (exit.equals("exit")) {
                 return;
             }
+            System.out.println(cal.record);
+
 
         }
     }
