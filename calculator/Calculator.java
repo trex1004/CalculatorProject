@@ -22,4 +22,7 @@ public class Calculator {
     public void getRecord() {
         System.out.println("목록\n" + record);
     }
+    public void setRecord() {
+        record.remove(0);
+    }
 }

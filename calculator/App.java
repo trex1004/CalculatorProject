@@ -1,5 +1,6 @@
 package calculator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -22,10 +23,13 @@ public class App {
 
             cal.getRecord();
 
-            System.out.println("더 계산하시겠습니까? (종료: exit)");
+            System.out.println("더 계산하시겠습니까? (종료: exit) / (첫 결과 삭제: 1)");
             String exit = sc.next();
+
             if (exit.equals("exit")) {
                 return;
+            } else if (exit.equals("1")) {
+                cal.setRecord();
             }
 
         }
