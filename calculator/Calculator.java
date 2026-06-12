@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
-    public int calculate(int a, int b, char operator) {
+    public int calculate(int num1, int num2, char operator) {
         int result = 0;
 
         switch (operator) {
-            case '+' -> result = a + b;
-            case '-' -> result = a - b;
-            case '*' -> result = a * b;
-            case '/' -> result = a / b;
+            case '+' -> result = num1 + num2;
+            case '-' -> result = num1 - num2;
+            case '*' -> result = num1 * num2;
+            case '/' -> result = num1 / num2;
             default -> throw new RuntimeException("연산자가 아닙니다.");
 
         }
